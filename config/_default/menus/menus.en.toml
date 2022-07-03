@@ -1,0 +1,31 @@
+[[main]]
+  name = "Kursus"
+  weight = 10
+  identifier = "kursus"
+  url = "/docs/introduktion/kursus-introduktion/"
+
+[[main]]
+  name = "Kursus Introduktion"
+  weight = 10
+  identifier = "introduktion"
+  url = "/docs/introduktion/kursus-introduktion/"
+  parent = "kursus"
+
+[[main]]
+  name = "Excel"
+  weight = 20
+  identifier = "01-excel"
+  url = "/docs/01-excel/excel-introduktion/"
+  parent = "kursus"
+
+[[main]]
+  name = "Project"
+  weight = 30
+  identifier = "project"
+  url = "/docs/project/project-introduktion/"
+  parent = "kursus"
+
+[[main]]
+  name = "Blog"
+  url = "/blog/"
+  weight = 20
