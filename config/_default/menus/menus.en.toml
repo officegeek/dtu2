@@ -24,8 +24,3 @@
   identifier = "project"
   url = "/docs/project/project-introduktion/"
   parent = "kursus"
-
-[[main]]
-  name = "Blog"
-  url = "/blog/"
-  weight = 20

@@ -8,7 +8,7 @@ draft: false
 images: []
 menu:
   docs:
-    parent: "01-excel"
+    parent: "excel"
 weight: 100
 toc: true
 ---
