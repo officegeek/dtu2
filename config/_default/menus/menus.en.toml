@@ -24,3 +24,17 @@
   identifier = "project"
   url = "/docs/project/project-introduktion/"
   parent = "kursus"
+
+  [[main]]
+  name = "Data"
+  weight = 40
+  identifier = "data"
+  url = "/docs/database/database-introduktion/"
+  parent = "kursus"
+
+  [[main]]
+  name = "Excel Office Script"
+  weight = 50
+  identifier = "officescript"
+  url = "/docs/officescript/officescript-introduktion/"
+  parent = "kursus"
