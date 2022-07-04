@@ -12,7 +12,7 @@
   parent = "kursus"
 
 [[main]]
-  name = "Excel"
+  name = "Excel Introduktion"
   weight = 20
   identifier = "excel"
   url = "/docs/excel/excel-introduktion/"
@@ -45,6 +45,13 @@
   identifier = "data"
   url = "/docs/database/database-introduktion/"
   parent = "kursus"
+
+    [[main]]
+  name = "SQL"
+  weight = 10
+  identifier = "sql"
+  url = "/docs/database/database-introduktion/"
+  parent = "data"
 
   [[main]]
   name = "Excel Office Script"
