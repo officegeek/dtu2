@@ -14,8 +14,8 @@
 [[main]]
   name = "Excel"
   weight = 20
-  identifier = "01-excel"
-  url = "/docs/01-excel/excel-introduktion/"
+  identifier = "excel"
+  url = "/docs/excel/excel-introduktion/"
   parent = "kursus"
 
 [[main]]
