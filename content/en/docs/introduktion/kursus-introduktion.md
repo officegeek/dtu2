@@ -21,14 +21,14 @@ Undervisningen er fordel på:
 
 De 6 online gange bliver du undervist via videoer der er optaget og tilhørende opgaver.
 
-|Dato	        |Type         	|Emne                                    |
+|Dato	        |Type         	|Emne                                       |
 |------------	|--------------	|------------------------------------------	|
 | 01-09-2022 	| **Fremmøde** 	| Excel                                     |
 | 08-09-2022 	| **Fremmøde** 	| Excel                                     |
 | 15-09-2022 	| *Online*  	  | Excel                                     |
 | 22-09-2022 	| **Fremmøde** 	| Project                                   |
 | 23-09-2022 	| Opgave 1   	  |                                           |
-| 29-09-2022 	| **Fremmøde** 	| Project Software                         	|
+| 29-09-2022 	| **Fremmøde** 	| Project                                 	|
 | 06-10-2022 	| *Online*  	  | Excel Data - Power Query - Database - SQL |
 | 13-10-2022 	| *Online*  	  | Excel Data - Power Query - Database - SQL |
 | 14-10-2022 	| Opgave 2    	|                                           |
