@@ -19,6 +19,20 @@
   parent = "kursus"
 
 [[main]]
+  name = "Excel"
+  weight = 10
+  identifier = "excel"
+  url = "/docs/excel/excel/"
+  parent = "excel"
+
+[[main]]
+  name = "Pivottabel"
+  weight = 20
+  identifier = "excel"
+  url = "/docs/excel/pivottabel/"
+  parent = "excel"
+
+[[main]]
   name = "Project"
   weight = 30
   identifier = "project"

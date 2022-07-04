@@ -4,10 +4,6 @@ title: Excel
 nav_order: 3
 has_children: true
 ---
-<span class="fs-1">
-[HOME](../README.md){: .btn .btn-blue }
-</span>
-# Excel
 
 ## Excel funktioner
 Excel har over 300 indbyggede funktioner, nogle af dem kender du sikkert, f.eks. **SUM**
@@ -25,7 +21,7 @@ Ved relative cellereferencer er der så at sige altid samme forhold mellem forme
 
 Ved absolutte referencer fastholdes en cellereference – dvs. den bliver ved med at pege på en bestemt celle, hvorfra vi skal hente indholdet, uanset hvor mange gange vi tager kopier af formlen. Det bruges typisk til f.eks. moms og valutakurser. 
 
-Du opretter en absolut reference ved at stille markøren i formlen på den celle reference du vil oprette som absolut, derefter trykker du på funktionstasten [F4]. Der vil så fremkomme et $-tegn foran kolonnenavn og rækkenavn.
+Du opretter en absolut reference ved at stille markøren i formlen på den celle reference du vil oprette som absolut, derefter trykker du på funktionstasten [F4]. Der vil så fremkomme et $-tegn foran kolonne-navn og/eller række-navn.
 
 [Switch between relative, absolute, and mixed references](https://support.office.com/en-us/article/switch-between-relative-absolute-and-mixed-references-dfec08cd-ae65-4f56-839e-5f0d8d0baca9)
 
@@ -177,3 +173,14 @@ Udsnitsværktøjer giver dig knapper, som du kan klikke på for at filtrere **Ta
 Ud over hurtig filtrering angiver udsnitsværktøjer også den aktuelle filtreringstilstand, hvilket gør det nemt at forstå, hvad der præcis vises i en filtreret pivottabel.
 
 [Udsnitsværktøjer](https://support.office.com/da-dk/article/brug-udsnitsv%C3%A6rkt%C3%B8jer-til-at-filtrere-data-249f966b-a9d5-4b0f-b31a-12651785d29d)
+
+## Excel Fejl
+Når du arbejder i Excel kan du ikke undgå at der opstår "*fejl*".
+
+Excel returnere forskellige typer af fejl beskeder alt efter hvad der går "*galt*".
+
+Her er en lille video med de mest almindelige fejl beskeder, hvad de betyder og nogle løsninger på dem.
+
+<div style="position: relative; padding-bottom: 100.5813953488372%; height: 0;"><iframe src="https://www.loom.com/embed/a53d99b88eee46c280f4e41df04e731e" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
+
+Du kan hente den Excel fil jeg brugere her: [https://bit.ly/youtube_excel_fejl](https://bit.ly/youtube_excel_fejl)
