@@ -2,60 +2,53 @@
   name = "Kursus"
   weight = 10
   identifier = "kursus"
-  url = "/docs/introduktion/kursus-introduktion/"
+  url = "/docs/introduktion/"
 
 [[main]]
   name = "Kursus Introduktion"
   weight = 10
-  identifier = "introduktion"
-  url = "/docs/introduktion/kursus-introduktion/"
-  parent = "kursus"
-
-[[main]]
-  name = "Excel Introduktion"
-  weight = 20
-  identifier = "excel"
-  url = "/docs/excel/excel-introduktion/"
+  identifier = "kursusintro"
+  url = "/docs/introduktion/"
   parent = "kursus"
 
 [[main]]
   name = "Excel"
-  weight = 10
-  identifier = "excel"
-  url = "/docs/excel/excel/"
-  parent = "excel"
-
-[[main]]
-  name = "Pivottabel"
   weight = 20
   identifier = "excel"
-  url = "/docs/excel/pivottabel/"
-  parent = "excel"
+  url = "/docs/excel/"
+  parent = "kursus"
 
 [[main]]
   name = "Project"
   weight = 30
   identifier = "project"
-  url = "/docs/project/project-introduktion/"
+  url = "/docs/project/"
   parent = "kursus"
 
   [[main]]
   name = "Data"
   weight = 40
   identifier = "data"
-  url = "/docs/database/database-introduktion/"
+  url = "/docs/database/"
   parent = "kursus"
-
-    [[main]]
-  name = "SQL"
-  weight = 10
-  identifier = "sql"
-  url = "/docs/database/database-introduktion/"
-  parent = "data"
 
   [[main]]
   name = "Excel Office Script"
   weight = 50
   identifier = "officescript"
-  url = "/docs/officescript/officescript-introduktion/"
+  url = "/docs/officescript/"
+  parent = "kursus"
+
+  [[main]]
+  name = "Power"
+  weight = 60
+  identifier = "power"
+  url = "/docs/power/"
+  parent = "kursus"
+
+  [[main]]
+  name = "VBA"
+  weight = 60
+  identifier = "vba"
+  url = "/docs/vba/"
   parent = "kursus"

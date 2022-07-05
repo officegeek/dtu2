@@ -1,15 +1,8 @@
 ---
-title: "Kursus Introduktion - 2022 efterår"
-description: "Når du skal styre et projekt er det en fordel at bruge software som Microsoft Project eller "
-date: 2020-10-06T08:48:57+00:00
-lastmod: 2020-10-06T08:48:57+00:00
-draft: false
-images: []
-menu:
-  docs:
-    parent: "introduktion"
-weight: 100
-toc: true
+layout: default
+title: Kursus Introduktion - 2022 efterår
+nav_order: 1
+has_children: false
 ---
 
 Modulet løber over 14 undervisnings gange.
