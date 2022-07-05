@@ -42,6 +42,20 @@ Når du har optaget dine makroer skal de også afvikles. Det kan gøres på fler
 
 <div style="position: relative; padding-bottom: 62.769230769230774%; height: 0;"><iframe src="https://www.loom.com/embed/f1a4cc72f2714ffc8db536f1e516dff3" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
 
+## Automatisk afvikling
+Indtil nu har du afviklet dine makroer manuelt. Enten via en knap eller via menuen.
+
+Det er også muligt at afvikle makroer automatisk, det kan f.eks. være:
+
+- Når Excel filen åbnes eller lukkes
+- Før der printes
+- Når et bestemt ark aktiveres
+- osv.
+
+Det giver nogle muligheder i forhold til opdatering af data og bestemte makroer du vil være sikker på bliver afviklet.
+
+<div style="position: relative; padding-bottom: 106.10526315789474%; height: 0;"><iframe src="https://www.loom.com/embed/e03b9a088ab844efb41e786a5db80906" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
+
 ## Gemme en Excel fil makroer
 Når du skal gemme en Excel der indeholder makroer er det vigtigt at den gemmes i formatet - **Macro-Enabled Workbook (*.xlsm)**
 
@@ -58,6 +72,38 @@ Du kan finde en oversigt over de muligheder der er med *Workbook.BuiltinDocument
 Det er muligt at få hjælp til en funktion som du allerede har skrevet i din kode. Dette gøres ved at stille cursoren på funktionen og trykke på F1. Det er så Microsofts hjælp til den givne funktion der bliver åbnet i en browser. Du skal være forbundet til internettet for at det virker.
 
 <div style="position: relative; padding-bottom: 60.61538461538461%; height: 0;"><iframe src="https://www.loom.com/embed/fc04899f42af43ec8808f53e53e7bed8" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
+
+## Variable
+En variabel brugere du til at gennem værdier mens dit program kører.
+
+Forskellen mellem konstanter og variabler er at konstanter har en **fast** værdi, mens variabler kan **variere** i værdien.
+
+### Erklær en variabel eller konstant
+Det er god kode stil at erklære en variabel eller konstant inden du bruger den. 
+
+Det er godt nok frivilligt om du gør det i VBA.
+
+At erklære den, vil sige at du definerer hvilken datatype en variabel eller konstant er.
+
+Du erklærer en variabel med koden:
+
+    DIM *navn* AS *datatype*
+
+### Datatyper
+En variabel eller konstant er defineret med forskellige **datatyper**.
+
+- **byte** er en positiv talværdi mellem 0 og 255. Den fylder ca. 1 byte i hukommelsen.
+- **boolean** er en værdi der enten kan være sand (true) eller falsk (false). Den fylder ca. 2 bytes.
+- **integer** er en heltalsværdi mellem -32768 og +32768. Den fylder ca. 2 bytes.
+ -**long** er også en heltalsværdi, men kan være mellem -2.147.483.648 og +2.147.483.648. Den fylder ca. 4 bytes.
+- **single** er et decimaltal mellem -3,4e38 og +3,4e38 og fylder ca. 4 bytes.
+- **double** er et decimaltal mellem -1,8e308 og +1,8e308 og fylder ca. 8 bytes.
+ -**currency** er et decimaltal mellem -922.337.203.685.477,5808 og
++922.337.203.685.477,5808 og fylder ca. 8 bytes.
+- **date** er en dato der kan være fra den 1. januar år 100 til den 31. december 9999. Den fylder ca. 8 bytes.
+- **string** er en tekststreng der kan have op til 65.500 tegn, hvis den defineres som en konstant. Hvis den defineres som variabel, kan den have ca. 2 milliarder tegn.
+
+<div style="position: relative; padding-bottom: 106.10526315789474%; height: 0;"><iframe src="https://www.loom.com/embed/148b5d147b7a445ca275d704fc5d012d" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
 
 ## Basis elementer
 VBA består af 5 basis elementer:
@@ -150,8 +196,6 @@ indtil du støder på objekter, der ikke indeholder andre objekter.
 ## IF
 [Microsoft If...Then...Else statement](https://docs.microsoft.com/en-us/office/vba/language/reference/user-interface-help/ifthenelse-statement)
 
-## Variabler
-
 ## Loop
 LOOP eller løkker er meget brugt i programmering. Det kan f.eks. være gennemløb af data i et Excel ark.
 
@@ -203,7 +247,10 @@ Hvis du har behov for at Stoppe/komme ud af et Loop før det er helt færdigt, k
           Exit Do
       End If
     Loop
-``` 
+```
+
+<div style="position: relative; padding-bottom: 106.04166666666666%; height: 0;"><iframe src="https://www.loom.com/embed/5a0472cb48684a10b8389a102cbb03e4" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
+
 ## Fejlhåndtering
 Der er forskellige typer af fejl i et program. Nogle fejl opstår fordi der er en fejl i programmeringen af programmet og nogle fejl opstår via brugeren, f.eks. ved en forkert indtastning.
 
@@ -223,7 +270,110 @@ Error handling består af 3 "kommandoer"
         Resume Next
     End Sub
 ``` 
+
+<div style="position: relative; padding-bottom: 106.10526315789474%; height: 0;"><iframe src="https://www.loom.com/embed/d9f5cc8284c748e7b30efcb858833781" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
+
+## Min kode
+```vb
+Sub Error_Test()
+    Dim Tal As Integer ' INT = 1 og 32.676
+    
+    'On Error Resume Next
+    On Error GoTo errHandler
+    
+    Tal = InputBox("Skriv et tal mellem 1 og 32.767")
+    MsgBox Tal
+
+Exit Sub
+errHandler:
+
+    Select Case Err.Number
+        Case 6
+            MsgBox "Tal skal være mellem 1 og 32.767"
+        Case 13
+            MsgBox "Du skal taste tal"
+        Case Else
+            MsgBox Err.Number & vbNewLine & Err.Description
+    End Select
+    
+    Resume
+    
+End Sub
+```
+
 [Microsoft On Error Statement oversigt](https://docs.microsoft.com/en-us/office/vba/language/reference/user-interface-help/on-error-statement)
+
+## Hastighed
+VBA er ikke altid det hurtigste programmering sprog, men der er metoder til at optimere det.
+
+<div style="position: relative; padding-bottom: 108.35073068893529%; height: 0;"><iframe src="https://www.loom.com/embed/f61cd6ad0f294a0fae5a383ebd7a1a19" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
+
+### Kode
+Den kode jeg tester hastigheden på, husk at slå *Immediate* vinduet til.
+```vb
+Sub Hastighed()
+    Dim i As Integer
+    Dim StartTid As Double
+    
+    ' Optimer
+    Call SpeedUp(True)
+    
+    ' Start tid
+    StartTid = Timer
+    
+    ' Start Celle
+    Range("A1").Select
+    
+    For i = 1 To 100
+        
+        Range("A" & i).Select
+        Selection.Copy
+
+        Range("B" & i).Select
+        ActiveSheet.Paste
+        
+'        Range("B" & i).Value = Range("A" & i).Value
+                
+    Next i
+    
+    ' Optimer
+    Call SpeedUp(False)
+
+    ' Check tid
+    Debug.Print Format(Timer - StartTid, "00.00.00")
+
+End Sub
+```
+
+Kode der optimere hastigheden
+```vb
+Sub SpeedUp(check As Boolean)
+
+    If check = True Then
+        With Application
+            .Calculation = xlCalculationManual
+            .ScreenUpdating = False
+            .Cursor = xlWait
+        End With
+    Else
+        With Application
+            .Calculation = xlCalculationAutomatic
+            .ScreenUpdating = True
+            .Cursor = xlDefault
+        End With
+    End If
+    
+End Sub
+```
+
+# Break Point
+Når du afvikler din kode, specielt loop, kan det være en fordel ast kunne *følge* koden - Se/Afvikle koden linje for linje.
+
+Det gør det muligt at finde fejl og problemer i koden.
+
+*Brug **F8** til at steppe igennem koden*
+
+<div style="position: relative; padding-bottom: 105.21920668058455%; height: 0;"><iframe src="https://www.loom.com/embed/67f0eba3587047aebfd674d8fd7b88e1" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
 
 ## Andre Programmer
 Alt efter hvilket Microsoft Office program du arbejder i vil det være muligt at åbne et andet Office program, f.eks. du har nogle diagrammer i Excel som du opdateret og derefter gerne vil overføre til PowerPoint - *Automatisk*.
